@@ -1,0 +1,68 @@
+.homepage
+    .hero
+        .logo
+            margin: 2rem 0rem
+            @media (max-width:700px)
+                margin: 5rem 0rem
+            svg
+                width: 15%
+                fill: transparent
+                margin: auto
+                display: block
+                stroke: $mainColor
+                stroke-width: 8px
+                stroke-dasharray: 2191px
+                stroke-dashoffset: 2191px
+                opacity: 0
+                @media (max-width:700px)
+                    width: 30%
+                @media (max-width:500px)
+        .info
+            font-weight: 600
+            font-size: 5rem
+            width: 60%
+            margin: auto
+            margin-bottom: 2rem
+            text-align: center
+            letter-spacing: -3px
+            color: $secoundColor
+            span
+                color: $mainColor
+            @media (max-width:700px)
+                font-size: 4rem
+                width: 88%
+                margin-bottom: 0rem
+                margin-top: 0rem
+            @media (max-width:500px)
+                width: 100%
+                font-size: 2.5rem
+        .s-hero-images
+            position: relative
+            height: 45vh
+            z-index: -1
+            .s-hero-wrapper
+                display: inline-flex
+                align-items: center
+                height: 45vh
+                width: 100%
+                .s-hero-image
+                    position: absolute
+                    width: 25%
+                    &:nth-child(1)
+                        right: 35%
+                    &:nth-child(2)
+                        right: 59%
+                    &:nth-child(3)
+                        right: 84%
+                    &:nth-child(4)
+                        right: 101%
+                    &:nth-child(5)
+                        right: -13%
+                    &:nth-child(6)
+                        right: -37%
+                    &:nth-child(7)
+                        right: -65%
+                    &:nth-child(8)
+                        right: 11%
+                    img
+                        width: 87%

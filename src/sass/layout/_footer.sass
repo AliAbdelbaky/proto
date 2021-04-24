@@ -1,0 +1,122 @@
+.footer
+    overflow-x: hidden
+    width: 100%
+    z-index: 0
+    position: relative
+    footer
+        padding: 4rem 8rem 2rem
+        background-color: $footerbgColor
+        color: $body-mainbgColor
+        @media (max-width:700px)
+            padding: 4rem 2rem 2rem
+        @media (max-width:500px)
+            padding: 4rem 2rem 2rem
+        .logo
+            text-align: center
+            margin: 2rem 0rem 4rem
+            letter-spacing: 6px
+            font-size: 1.6rem
+            font-weight: 100
+            color: $thirdColor
+            @media (max-width: 300px)
+                font-size: 0.9rem
+        .content
+            margin-top: 3rem
+            .row
+                @media (max-width:500px)
+                    justify-content: center
+            ul
+                .title
+                    color: $body-mainbgColor
+                    margin-bottom: 0.6rem
+                    &.help
+                        color: $secoundColor
+                        span
+                            color: #fff
+                li
+                    margin-bottom: 0.6rem
+                    width: fit-content
+                    position: relative
+                    @media (max-width:500px)
+                        margin: auto
+                    a
+                        text-decoration: none
+                        color: $secoundColor
+                        font-size: 0.8rem
+                        @include mainTransition
+                        &.router-link-exact-active
+                            color: $fouthColor
+                            &::after
+                                content: ""
+                                position: absolute
+                                bottom: -0.1rem
+                                right: 0rem
+                                width: 100%
+                                height: 0.1px
+                                background-color: #fff
+                                transform: scale(1)
+                                transform-origin: left
+                        @include mainTransition
+                    &::after
+                        content: ""
+                        position: absolute
+                        bottom: -0.1rem
+                        right: 0rem
+                        width: 100%
+                        height: 0.1px
+                        background-color: #fff
+                        transform: scale(0)
+                        transform-origin: left
+                        @include mainTransition
+                    &:hover
+                        &::after
+                            transform: scale(1)
+                            transform-origin: right
+                        a
+                            color: $fouthColor
+                            text-decoration: none
+            .d-content
+                @media (max-width:500px)
+                    width: 57%
+                    margin-right: 4rem
+                    display: contents
+                .row
+                    @media (max-width:500px)
+                        text-align: center
+            .license
+                font-size: 0.8rem
+                margin: 6rem 0rem 4rem
+                color: $secoundColor
+                .info
+                    @include mainTransition
+                    @media (max-width:300px)
+                        font-size: 9px
+                    &:hover
+                        color: $fouthColor
+                        cursor: pointer
+                .copy-right
+                    @media (max-width: 700px)
+                        text-align: center !important
+                        margin-bottom: 1rem
+                    @media (max-width:300px)
+                        font-size: 8px
+            .logo-svg.text-center
+                justify-self: center
+                margin: auto
+                @media (max-width: 700px)
+                    margin-top: 3rem
+                svg
+                    fill: $thirdColor
+                    width: 25%
+.homepage
+    .footer
+        transform: translateY(-100%)
+.aboutpage
+    .footer
+        transform: translateY(-100%)
+        .logo-svg.text-center
+            justify-self: center
+            margin: auto
+            svg
+                fill: $thirdColor
+                width: 25%

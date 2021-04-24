@@ -1,0 +1,90 @@
+.banner-one
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-text
+                        p.disc Dashboard
+                        h2.title Bab Dashboard
+                        p.about Using JavaSript ,Sass, Gulpjs, Pugjs, Bootstrap4 
+                        a.banner-btn(href="https://aliabdelbaky.github.io/bab-dashboard/" target="_blank") Website
+                .col-md-6
+                    .banner-img
+                        .fullimage
+                            img(src="../../assets/mywork/babfull.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/bab-iponex.png", alt="alt")
+    section.banner.banner-two
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-img.mr-left
+                        .fullimage
+                            img(src="../../assets/mywork/oopsFull.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/oops-iphonex.png", alt="alt")
+                .col-md-6
+                    .banner-text
+                        p.disc Car Shop
+                        h2.title Oops
+                        p.about Using JavaSript , Css3, Html5, Gulpjs, Bootstrap4 
+                        a.banner-btn(href="https://aliabdelbaky.github.io/oops/" target="_blank") Website
+    section.banner.banner-three
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-text
+                        p.disc Resturant
+                        h2.title Sofra
+                        p.about Using JavaSript ,Css3, Gulpjs, Html5, Bootstrap4 
+                        a.banner-btn(href="https://aliabdelbaky.github.io/Sofra-Restaurant/" target="_blank") Website
+                .col-md-6
+                    .banner-img
+                        .fullimage
+                            img(src="../../assets/mywork/sofrafull.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/sofra-iphonex.png", alt="alt")
+    section.banner.banner-four
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-img.mr-left
+                        .fullimage
+                            img(src="../../assets/mywork/Todofull.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/Todo-iphonex.png", alt="alt")
+                .col-md-6
+                    .banner-text
+                        p.disc Web Application
+                        h2.title Todo App
+                        p.about Using JavaSript ,Sass, Gulpjs, html, Vuejs
+                        a.banner-btn(href="https://aliabdelbaky.github.io/Todos-app/" target="_blank") Website
+    section.banner.banner-five
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-text
+                        p.disc Dashboard
+                        h2.title Ninga Dashboard
+                        p.about Using JavaSript ,Sass, Gulpjs, Pugjs, Bootstrap4 
+                        a.banner-btn(href="" target="_blank") Website
+                .col-md-6
+                    .banner-img
+                        .fullimage
+                            img(src="../../assets/mywork/ningafull.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/ninga-iphonex.png", alt="alt")
+    section.banner.banner-six
+        .container-fluid
+            .row
+                .col-md-6
+                    .banner-img.mr-left
+                        .fullimage
+                            img(src="../../assets/mywork/bloodbank-full.png", alt="alt")
+                        .responsiveimage
+                            img(src="../../assets/mywork/bloodbank-iphonex.png", alt="alt")
+                .col-md-6
+                    .banner-text
+                        p.disc Health
+                        h2.title Blood Bank
+                        p.about Using JavaSript ,Css3, Gulpjs, Html5, Bootstrap4 
+                        a.banner-btn(href="https://aliabdelbaky.github.io/Blood-Bank/" target="_blank") Website

@@ -1,0 +1,272 @@
+header
+    background-color: transparent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    z-index: 3
+    align-items: center
+    padding: 3rem 2rem
+    @media (max-width:700px)
+        padding: 1rem 0rem 1rem 1rem
+    @media (max-width:300px)
+        padding: 3rem 1rem
+    .logo
+        margin-left: 2rem
+        letter-spacing: 3px
+        font-size: 1.6rem
+        font-weight: 600
+        opacity: 1
+        color: $mainColor
+        @media (max-width: 1000px)
+            font-size: 1.2rem
+            margin: 0
+        @media (max-width: 700px)
+            font-size: 0.9rem
+            margin-top: 1rem
+        @media (max-width:500px)
+            font-size: 71%
+        @media (max-width: 300px)
+            font-size: 9px
+            margin: auto
+            margin-top: 1.4rem
+            margin-left: 3px
+        @include mainTransition
+    nav
+        width: 50%
+        margin-right: 2rem
+        .nav-list
+            display: flex
+            justify-content: space-evenly
+            list-style: none
+            align-items: center
+            @media (min-width: 1200px)
+                margin: 0rem
+            .nav-links
+                opacity: 1
+                @include mainTransition
+                a
+                    text-decoration: none
+                    color: $mainColor
+                    position: relative
+                    font-weight: 600
+                    font-weight: 100
+                    @media (max-width:1100px)
+                        opacity: 0
+                        pointer-events: none
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 100%
+                        height: 1px
+                        background-color: $mainColor
+                        bottom: -0.2rem
+                        transform: scaleX(0)
+                        transform-origin: left
+                        @include mainTransition
+                    &:hover
+                        &::before
+                            transform: scaleX(1)
+                            transform-origin: right
+                    &.router-link-exact-active
+                        &::before
+                            transform: scaleX(1)
+                            transform-origin: right
+        .nav-open
+            position: absolute
+            top: 0rem
+            right: 0rem
+            width: 100%
+            height: 100vh
+            background-color: transparent
+            z-index: 1
+            transform: translateY(-100%)
+            opacity: 0
+            pointer-events: none
+            .container-fluid
+                padding: 0rem
+                height: 100vh
+                overflow: hidden
+                .img-container,.content
+                    background-color: #fff
+                .content
+                    @media (max-width:700px)
+                        padding-top: 9rem
+                    @media (max-width:500px)
+                        padding-top: 0rem
+                    @media (max-width:300px)
+                        padding-top: 0rem
+                .img-container
+                    padding: 0rem
+                    margin: 0rem
+                    position: relative
+                    @media (max-width:750px)
+                        display: none
+                img
+                    width: 100%
+                    position: absolute
+                    height: 100%
+                    object-fit: cover
+                .links
+                    margin-top: 13rem
+                    text-align: left
+                    padding-left: 6rem
+                    @media (max-width:750px)
+                        margin-top: 4rem
+                    @media (max-width:1200px)
+                        padding-left: 2rem
+                    a
+                        text-decoration: none
+                        color: $mainColor
+                        font-size: 4rem
+                        text-align: left
+                        position: relative
+                        @include mainTransition
+                        @media (max-width:750px)
+                            font-size: 2rem
+                        &:hover,&.router-link-exact-active
+                            font-style: italic
+                            color: $secoundColor
+                            &::before
+                                content: ""
+                                width: 70px
+                                position: absolute
+                                height: 2px
+                                top: 51%
+                                right: 97%
+                                background-color: $secoundColor
+                                @media (max-width:750px)
+                                    width: 40px
+                    .logo
+                        position: absolute
+                        @media (max-width:750px)
+                            display: none
+                    .navopen-list
+                        margin-left: 3.5rem
+                        @media (max-width:750px)
+                            margin-left: 0rem
+                        .nav-links
+                            @media (max-width:750px)
+                                text-align: center
+                    .copy-right
+                        color: $thirdColor
+                        @media (max-width:750px)
+                            display: block
+                            text-align: center
+                .social
+                    margin-top: 14rem
+                    @media (max-width:750px)
+                        margin-top: 1rem
+                    h3
+                        font-weight: bold
+                        font-size: 3rem
+                        margin-bottom: 2rem
+                        color: $thirdColor
+                        @media (max-width:750px)
+                            text-align: center
+                            font-size: 2rem
+                        span
+                            color: $mainColor
+                    a
+                        display: block
+                        margin-bottom: 1.3rem
+                        text-decoration: none
+                        position: relative
+                        width: fit-content
+                        color: $mainColor
+                        @media (max-width:750px)
+                            margin: auto
+                            margin-bottom: 10px
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 100%
+                            height: 1px
+                            background-color: $mainColor
+                            bottom: -0.2rem
+                            transform: scaleX(0)
+                            transform-origin: left
+                            @include mainTransition
+                        &:hover
+                            &::before
+                                transform: scaleX(1)
+                                transform-origin: right
+        .burger-btn
+            position: absolute
+            border: none
+            outline: none
+            top: 39%
+            right: 4rem
+            width: 3rem
+            z-index: 91
+            background: transparent
+            @media (max-width:500px)
+                right: 1rem
+            @media (max-width:300px)
+                top: 45%
+            span
+                padding: 0.3rem 0rem
+                display: block
+                @media (max-width:300px)
+                    padding: 0.2rem 0rem
+                &::after
+                    content: ""
+                    width: 35px
+                    height: 1px
+                    background-color: $mainColor
+                    position: absolute
+                    right: 0rem
+                    transform-origin: right
+                    opacity: 1
+                    @include mainTransition
+                    @media (max-width:300px)
+                        width: 38px
+                &::before
+                    content: ""
+                    width: 35px
+                    height: 1px
+                    position: absolute
+                    right: 0rem
+                    background-color: $fouthColor
+                    transform: scale(0)
+                    transform-origin: left
+                    @include mainTransition
+                &:nth-child(2)
+                    &::after
+                        height: 1.6px
+            &:hover
+                span
+                    &::before
+                        transform: scale(1)
+                        transform-origin: left
+                    &::after
+                        transform: scale(0)
+                        transform-origin: right
+            &.white
+                span
+                    &::after
+                        background-color: $thirdColor !important
+.aboutpage
+    header
+        .logo
+            color: $DarkmodeMainFont
+    header nav .nav-list .nav-links a
+        color: $DarkmodeMainFont
+    header nav .burger-btn span::after
+        background-color: $DarkmodeMainFont
+    header nav .nav-open .container-fluid .links a
+        color: $DarkmodeMainFont
+    header nav .nav-open .container-fluid .content
+        background-color: $aboutBgColor
+    header nav .nav-open .container-fluid .links .logo
+        color: $DarkmodeMainFont
+    header nav .nav-open .container-fluid .social a
+        color: $DarkmodeMainFont
+    header nav .nav-open .container-fluid .social a::before
+        background-color: $DarkmodeMainFont
+    header nav .nav-open .container-fluid .social h3 span
+        font-weight: 600
+        color: $DarkmodeMainFont
+        opacity: 0.8
+    header nav .nav-list .nav-links a::before
+        background-color: $DarkmodeMainFont

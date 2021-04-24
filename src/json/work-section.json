@@ -1,0 +1,73 @@
+[{
+        "id": 1,
+        "className": "banner-one",
+        "disc": "Dashboard",
+        "title": "Bab Dashboard",
+        "about": "Using JavaSript ,Sass, Gulpjs, Pugjs, Bootstrap4",
+        "btnLink": "https://aliabdelbaky.github.io/bab-dashboard/",
+        "btnName": "Website",
+        "fullimagesrc": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png",
+        "responsiveimagesec": "bab-iponex.png"
+    },
+    {
+        "id": 2,
+        "className": "banner-two",
+        "disc": "Car Shop",
+        "title": "Oops",
+        "about": "Using JavaSript ,Sass, Gulpjs, Pugjs, Bootstrap4",
+        "btnLink": "https://aliabdelbaky.github.io/oops/",
+        "btnName": "Website",
+        "fullimagesrc": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png",
+        "responsiveimagesec": "oops-iphonex.png",
+        "imgdirection": "mr-left",
+        "automr": "ml-auto"
+    },
+    {
+        "id": 3,
+        "className": "banner-three",
+        "disc": "Resturant",
+        "title": "Sofra",
+        "about": "Using JavaSript ,Css3, Gulpjs, Html5, Bootstrap4",
+        "btnLink": "https://aliabdelbaky.github.io/Sofra-Restaurant/",
+        "btnName": "Website",
+        "fullimagesrc": "sofrafull.png",
+        "responsiveimagesec": "sofra-iphonex.png"
+    },
+    {
+        "id": 4,
+        "className": "banner-four",
+        "disc": "Web Application",
+        "title": "Todo App",
+        "about": "JavaSript ,Sass, Gulpjs, html, Vuejs",
+        "btnLink": "https://aliabdelbaky.github.io/Todos-app/",
+        "btnName": "Website",
+        "fullimagesrc": "Todofull.png",
+        "responsiveimagesec": "Todo-iphonex.png",
+        "imgdirection": "mr-left",
+        "automr": "ml-auto"
+    },
+    {
+        "id": 5,
+        "className": "banner-five",
+        "disc": "Dashboard",
+        "title": "Ninga Dashboard",
+        "about": "JavaSript ,Sass, Gulpjs, Pugjs, Bootstrap4",
+        "btnLink": "",
+        "btnName": "Website",
+        "fullimagesrc": "ningafull.png",
+        "responsiveimagesec": "ninga-iphonex.png"
+    },
+    {
+        "id": 6,
+        "className": "banner-six",
+        "disc": "Health",
+        "title": "Blood Bank",
+        "about": "Using JavaSript ,Css3, Gulpjs, Html5, Bootstrap4",
+        "btnLink": "https://aliabdelbaky.github.io/Blood-Bank/",
+        "btnName": "Website",
+        "fullimagesrc": "bloodbank-full.png",
+        "responsiveimagesec": "bloodbank-iphonex.png",
+        "imgdirection": "mr-left",
+        "automr": "ml-auto"
+    }
+]

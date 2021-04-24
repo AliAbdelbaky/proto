@@ -1,0 +1,82 @@
+//- Global
+*
+    margin: 0rem
+    padding: 0rem
+    box-sizing: border-box
+ul
+    list-style: none
+body
+    background-color: $body-mainbgColor
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    overflow: hidden
+    cursor: none
+    @include mainTransition
+    &.bg-white
+        @include mainTransition
+        background-color: $body-secoundbgColor
+html
+    overflow: scroll
+    overflow-x: hidden
+    overscroll-behavior: smoth
+    -webkit-overflow-scrolling: touch
+a
+    cursor: none !important
+button
+    cursor: none !important
+//----------------------------
+//-Scrolling
+.smooth-scroll-warpper
+    overflow: hidden
+    position: fixed
+    z-index: 2
+    top: 0rem
+    left: 0rem
+    width: 100%
+::-webkit-scrollbar
+    width: 0px
+//-----------------------
+//- Curser
+.cursor
+    pointer-events: none
+    position: fixed
+    left: 0%
+    top: 0%
+    right: 0%
+    bottom: 0%
+    z-index: 100
+    -webkit-box-pack: center
+    justify-content: center
+    align-items: center
+    mix-blend-mode: difference
+    @media (max-width:700px)
+        display: none
+    .main
+        position: absolute
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        border: 1px solid $cursorMainColor
+        background-color: $cusrorBg
+        transform: translate(-50%,-50%)
+        transform-origin: 100% 100%
+        @include mainTransition
+        transition-property: background,padding
+        &.filter
+            padding: 2rem
+    .secound
+        position: absolute
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background-color: $scoundCursorBg
+        transform: translate(-50%,-50%)
+//--------------------------
+//-Classes
+.mr-left
+    position: absolute
+    right: 0
+//-------------------------
+//- Pages
+.aboutpage
+    background-color: $aboutBgColor

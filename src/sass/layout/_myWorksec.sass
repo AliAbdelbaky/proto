@@ -1,0 +1,94 @@
+.homepage
+    .mywork
+        margin-top: 12.25vw
+        h2
+            text-align: center
+            font-size: 4rem
+            font-weight: 600
+            margin-bottom: 5rem
+            color: $secoundColor
+            @media (max-width:300px)
+                font-size: 2rem
+            span
+                color: $mainColor
+                letter-spacing: -14px
+                @media (max-width:300px)
+                    letter-spacing: -4px
+        .banner
+            height: 100vh
+            position: relative
+            padding: 3rem 1rem
+            .container-fluid
+                width: 100%
+                height: 100%
+                .banner-img
+                    box-shadow: 0px 0px 7px 1px $secoundColor
+                    width: 80%
+                    @media (max-width:1000px)
+                        margin-top: 7rem
+                    @media (max-width:700px)
+                        display: none
+                    .fullimage
+                        width: 100%
+                        height: 100%
+                    .responsiveimage
+                        transform: translate(-51%, -65%)
+                        position: absolute
+                        width: calc(100%/3)
+                        height: 35vh
+                        box-shadow: -5px 4px 7px 1px $secoundColor
+                        @media (max-width:1000px)
+                            height: 15vh
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                .banner-text
+                    padding: 1rem 3rem
+                    width: 80%
+                    margin-left: 10rem
+                    @media (max-width:1300px)
+                        margin-left: 5rem
+                    @media (max-width:1000px)
+                        margin-left: 0rem
+                    .disc
+                        font-size: 15px
+                        font-weight: 600
+                    .title
+                        font-weight: 500
+                        font-size: 4rem
+                        text-align: left
+                        margin: 3rem 0rem
+                        width: 70%
+                        color: $mainColor
+                        @media (max-width:1000px)
+                            font-size: 2rem
+                    .about
+                        width: 30%
+                        font-weight: 600
+                        font-size: 16px
+                        margin-bottom: 3rem
+                        color: $mainColor
+                    .banner-btn
+                        padding: 1rem 5rem
+                        font-size: 17px
+                        text-decoration: none
+                        font-weight: 600
+                        color: $body-mainbgColor
+                        background-color: $fouthColor
+                        display: block
+                        width: 50%
+                        text-align: center
+                        @include mainTransition
+                        @media (max-width:1300px)
+                            width: 70%
+                        @media (max-width:1000px)
+                            width: 100%
+                        @media (max-width:700px)
+                            padding: 0.5rem 2rem
+                            font-size: 8px
+                            width: 100%
+                            text-align: center
+                        &:hover
+                            background-color: #775766
+                            margin-left: 10px

@@ -1,0 +1,83 @@
+.homepage
+    .github
+        height: 100vh
+        .container-fluid
+            @media (max-width:300px)
+                padding: 0rem
+            h6
+                color: $mainColor
+                font-weight: bold
+                @media (max-width:300px)
+                    font-size: 0.5rem
+                    margin-left: 1rem
+            h2
+                text-align: left
+                font-weight: 600
+                color: $secoundColor
+                font-size: 4rem
+                margin-bottom: 5rem
+                @media (max-width:700px)
+                    font-size: 2rem
+                    margin-bottom: 2rem
+                @media (max-width:300px)
+                    font-size: 1rem
+                    margin-left: 1rem
+                span
+                    color: $mainColor
+            table
+                width: 100%
+                color: $mainColor
+                @media (max-width:500px)
+                    font-size: 10px
+                @media (max-width:300px)
+                    font-size: 7px
+                tr
+                    &:nth-child(1)
+                        font-weight: 600
+                        color: $secoundColor
+                        &:hover
+                            td
+                                background-color: $tabelbgColor
+                                color: $secoundColor
+                    &:hover
+                        td
+                            background-color: $body-mainbgColor
+                            color: $mainColor
+                            a
+                                svg
+                                    color: $mainColor
+                    td
+                        padding: 1rem
+                        background-color: $tabelbgColor
+                        @include mainTransition
+                    .t-explore
+                        text-align: right
+                        width: 5%
+                        a
+                            text-decoration: none
+                            svg
+                                color: $secoundColor
+                                width: 70%
+                                @include mainTransition
+                            &:hover
+                                svg
+                                    color: $mainColor
+            .more
+                padding: 1rem 0rem
+                font-size: 17px
+                text-align: center
+                text-decoration: none
+                font-weight: 600
+                display: block
+                width: calc( 100% /3 )
+                background-color: $fouthColor
+                color: $body-mainbgColor
+                margin: auto
+                margin-top: 4rem
+                @include mainTransition
+                @media (max-width:500px)
+                    padding: 0.5rem 0rem
+                    font-size: 12px
+                    margin-top: 2rem
+                &:hover
+                    background-color: #775766
